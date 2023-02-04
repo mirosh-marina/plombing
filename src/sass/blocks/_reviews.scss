@@ -1,0 +1,55 @@
+.reviews {
+    min-height: 920px;   
+    padding: 70px 126px 48px 99px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 800px;
+        grid-template-rows: repeat(3, 250px);
+        justify-content: center;
+    }
+    &__block {
+        margin-top: 60px;
+       display: flex;
+       animation: fadeInUp 2s forwards 1s;
+    }
+    @keyframes fadeInUp {
+        from {
+        opacity: 0;
+        transform: translateY(20px);
+        }
+        to {
+        opacity: 1;
+        transform: translateY(0);
+        }
+        }
+&__photo {
+    margin-right: 61px;
+    width: 169px;
+    height: 169px;
+}
+&__text {
+    flex-direction: column;
+}
+&__descr {
+    font-weight: 300;
+    font-size: 16px;
+    color: #323232;
+}
+
+&__subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    color: #323232;
+
+}
+
+
+&__title {
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #323232;
+    
+    }
+}        

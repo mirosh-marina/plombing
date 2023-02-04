@@ -1,0 +1,30 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/slick';
+@import 'libs/animate.min';
+
+
+
+@import 'base/variables';
+@import 'base/animations';
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.divider {
+    width: 148px;
+    height: 1px;
+    margin: 20px auto 17px auto;
+    background-color: #d0644d;
+}
+
+@import 'blocks/promo';
+@import 'blocks/plumbing';
+@import 'blocks/about';
+@import 'blocks/reviews';
+@import 'blocks/questions';

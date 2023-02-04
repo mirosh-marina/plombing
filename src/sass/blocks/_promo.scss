@@ -1,0 +1,113 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 2;
+    img {
+        width: 128px;
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: #344e85;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 400;
+        border-right: 1px dotted #fff;
+        padding-right: 20px;
+        &:last-child {
+            border-right: none;
+        }
+        &:hover {
+            color: #d0644d;
+            text-decoration: none;
+        }
+    }
+    &__contacts {
+        text-decoration: none;
+        color: #344e85;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        text-decoration: none;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 400;
+        a {
+            color: #344e85;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+    &__phone {
+        display: block;
+        &:hover {
+            color: #d0644d;
+            text-decoration: none;
+        }
+    }
+   button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 45px;
+    background-color: #DE2809;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    &:hover {
+        box-shadow: 3px 3px 20px 1px;
+        background-color:#FF0000;
+        transition: 0.5s all;
+}
+   }
+
+    }
+.promo {
+    min-height: 680px;
+    background: url(../img/background2.png)center (center/cover) no-repeat;
+    padding: 23px 0 82px 20px;
+    &__wrapper {
+        margin-top: 170px;
+        position: relative;
+    }
+    &__header {
+        margin-top: 26px;
+        color: #fff;
+        font-family: "Roboto Condensed";
+        font-size: 72px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__subheader {
+        color: #d0644d;
+        font-family: "Roboto Condensed";
+        font-size: 42px;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 38px;
+       }
+   &__text {
+    color: #fff;
+    font-family: "Roboto Condensed";
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 38px;
+   }
+}
+    
