@@ -1,0 +1,56 @@
+.plumbing {
+    min-height: 590px;
+    padding: 20px 0 50px 0;
+    &__header {
+        margin-top: 51px;
+        text-align: center;
+        color: #323232;
+        font-family: Roboto;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 23px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__subheader {
+        color: #323232;
+        font-family: Roboto;
+        font-size: 21px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 37px;
+        display: grid;
+        grid-template-columns: repeat(3, 360px);
+        grid-template-rows: repeat(2, 368px);
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        width: 360px;
+        height: 368px;
+    }
+    &__icon {
+        width: 360px;
+        height: 240px;
+    }
+    &__subtitle {
+        margin-top: 28px;
+        color: #d0644d;
+        font-family: "Roboto - Bold";
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__descr {
+        color: #3d3d3d;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        text-align: Center;
+    }
+}
