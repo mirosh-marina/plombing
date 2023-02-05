@@ -23,12 +23,12 @@
         
             <a href="#reviews" class="header__link">Feedback</a>
         
-            <a href="#footer" class="header__link">Contacts</a>
+            <a href="#questions" class="header__link">Contacts</a>
             <div class="header__contacts">
                 <a href="#questions" class="header__link">Have questions?</a> 
                 <a href="tel:+12675078523" class="header__phone">+1 (267) 507-85-23</a>
             </div>
-            <button id="headerBtn" data-modal="consultation" class="button">Call now</button>
+            <button id="headerBtn" class="button">Call now</button>
     </header>
     <section class="promo" id="promo">
         <div class="container">
@@ -228,13 +228,22 @@
     <div class="questions__descr">Get in touch for a prompt response. <br> Fill out our form now</div>
     <form id="questions-form" class="feed-form" action="#">
         <input name="name" placeholder="Your name" type="text">
-        <input name="phone"  placeholder="Your phone number">
+        <input name="phone" placeholder="Your phone number">
         <input name="email" placeholder="Your E-mail" type="email">
 
-        <button class="button button_submit">Send message</button>
+        <button data-modal="consultation" class="button button_submit">Send message</button>
     </form>
 </div>
     </section>
+
+    <div class="overlay">
+    <div class="modal" id="thanks">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Thank you for your request</div>
+        <div class="modal__descr">Our manager will contact you
+            <br> soon!</div>
+</div>
+    </div>
 
     <footer class="footer" id="footer">
         <div class="container">
@@ -253,7 +262,7 @@
                     <a href="tel:+12675078523" class="footer__phone">+1 (267) 507-85-23</a>
                 </div>
            
-                <button id="footerBtn" data-modal="consultation" class="button">Call now</button>
+                <button id="footerBtn"  class="button">Call now</button>
                 </div>
             </div>
         
@@ -266,6 +275,11 @@
     </div>
         </div>
     </footer>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
