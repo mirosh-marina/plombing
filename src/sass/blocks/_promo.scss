@@ -27,22 +27,14 @@
         }
     }
     &__contacts {
-        text-decoration: none;
-        color: #344e85;
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 400;
         display: flex;
         flex-direction: column;
         text-align: center;
-        text-decoration: none;
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 400;
+
         a {
             color: #344e85;
             text-decoration: none;
-            text-transform: uppercase;
+            
         }
     }
     &__phone {
@@ -50,6 +42,8 @@
         &:hover {
             color: #d0644d;
             text-decoration: none;
+
+
         }
     }
    button {
