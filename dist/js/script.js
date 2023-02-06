@@ -1,5 +1,10 @@
 const headerBtn = document.getElementById("headerBtn");
 const footerBtn = document.getElementById("footerBtn");
+const mainBtn = document.getElementById("mainBtn");
+
+mainBtn.addEventListener("click", function() {
+  window.location.href = "tel:+12675078523";
+  });
 
 headerBtn.addEventListener("click", function() {
   window.location.href = "tel:+12675078523";
@@ -58,17 +63,16 @@ validateForms('#questions-form');
 
 
 $('input[name=phone]').mask("+9 (999) 999-99-99");
-
 $('#questions-form').submit(function(e) {
   e.preventDefault();
 
+  if ($('#questions-form').valid()) {
+    $('.overlay, #thanks').fadeIn('slow');
+  }
   if (!$(this).valid()) {
     return;
   }
 
-  // if ($('#questions-form').valid()) {
-  //   $('.overlay, #thanks').fadeIn('slow');
-  // }
 
   $.ajax({
     type: "POST",
@@ -77,12 +81,13 @@ $('#questions-form').submit(function(e) {
   }).done(function() {
     $(this).find("input").val("");
     $('.overlay, #thanks').fadeIn('slow');
-
-
-$('form').trigger('reset');
+    $('form').trigger('reset');
   });
   return false;
 });
+
+
+ 
 
 
 // 
