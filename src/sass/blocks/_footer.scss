@@ -1,0 +1,87 @@
+.footer {
+    min-height: 100px;
+    background: url('../img/back2.png') center (center/cover) no-repeat;
+    &__item {
+        position: relative;
+        padding: 24px 0 10px 0;
+        padding-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #dfdfdf;
+    }
+        img {
+            width: 150px;
+        }
+    &__text {
+        color: #323232;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 100px;
+        align-items:flex-end;
+        margin-right: 100px;
+    }
+
+        a {
+            text-decoration: none;
+            color: #344e85;
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: 400;
+            text-align: right;
+            text-align: center;
+            &:hover {
+                color: #d0644d;
+                text-decoration: none;
+            }
+        }
+        &__links {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            margin-right: 50px;
+        }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+        height: 45px;
+        background-color: #DE2809;
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 30px;
+        &:hover {
+            box-shadow: 3px 3px 20px;
+            background-color:#FF0000;
+            transition: 0.5s all;
+    }
+}
+    &__policy {
+        text-align: center;
+        a {
+            color: #d0644d;
+            font-family: Roboto;
+            font-size: 13px;
+            font-weight: 300;
+            text-decoration: none;
+        }
+        
+    }
+}
