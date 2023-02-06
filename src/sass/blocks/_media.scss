@@ -36,22 +36,31 @@
     .plumbing {
         &__wrapper {
             margin-top: 60px;
-            grid-template-columns: repeat(3,250px);
+            grid-template-columns: repeat(3,300px);
             grid-template-rows: repeat(2,350px);
             justify-content: center;
             row-gap: 5px;
             column-gap: 15px;
         }
         &__item {
-            width: 250px;
+            width: 300px;
             height: 350px;
         }
         &__subtitle {
             margin-top: 15px;
         }
         &__icon {
-            width: 250px;
-            height: 172px;
+            width: 300px;
+            height: 200px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: repeat(3,290px);
+            gap: 30px;
+        }
+        &__item {
+            max-width: 290px;
         }
     }
 }
@@ -103,7 +112,16 @@
             height: 150px;
         }
     }
-    
+    .about {
+        &__wrapper {
+            grid-template-columns: repeat(2,340px);
+            grid-template-rows: repeat(2,220px);
+            row-gap: 20px;
+        }
+        &__item {
+            max-width: 340px;
+        }
+    }
 }
 
 
@@ -160,6 +178,21 @@
         &__icon {
             width: 250px;
             height: 160px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 500px;
+            grid-template-rows: 220px;
+            align-items:center;
+            justify-content: center;
+            gap: 20px;
+        }
+        &__item {
+            max-width: 500px;
+        }
+        &__descr {
+            text-align: center;
         }
     }
 }
@@ -221,7 +254,23 @@
             font-size: 18px;
         }
         &__descr {
-            font-size: 15px;
+            font-size: 14px;
         }
     }
+    .about {
+        &__wrapper {
+            grid-template-columns: 250px;
+            grid-template-rows: 220px;
+            align-items:center;
+            justify-content: center;
+            gap: 20px;
+        }
+        &__item {
+            max-width: 250px;
+        }
+        &__subtitle {
+            margin-top: 12px;
+        }
+      
+}
 }
