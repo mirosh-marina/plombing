@@ -62,9 +62,13 @@ $('input[name=phone]').mask("+9 (999) 999-99-99");
 $('#questions-form').submit(function(e) {
   e.preventDefault();
 
-  if ($('#questions-form').valid()) {
-    $('.overlay, #thanks').fadeIn('slow');
+  if (!$(this).valid()) {
+    return;
   }
+
+  // if ($('#questions-form').valid()) {
+  //   $('.overlay, #thanks').fadeIn('slow');
+  // }
 
   $.ajax({
     type: "POST",

@@ -57,14 +57,20 @@ validateForms('#questions-form');
 
 
 
-$('input[name=phone]').mask("+9 (999) 999-99-99");
-
+$('input[name=phone]').mask("+9 (999) 999-99-99", {
+onComplete: function() {
 $('#questions-form').submit(function(e) {
   e.preventDefault();
 
-  if ($('#questions-form').valid()) {
-    $('.overlay, #thanks').fadeIn('slow');
+  var formData = $(this).serializeArray();
+  var formEmpty = formData.some(function(field) {
+    return field.value === "";
+  });
+  
+  if (formEmpty) {
+    return;
   }
+
 
   $.ajax({
     type: "POST",
@@ -73,12 +79,13 @@ $('#questions-form').submit(function(e) {
   }).done(function() {
     $(this).find("input").val("");
     $('.overlay, #thanks').fadeIn('slow');
-
-
-$('form').trigger('reset');
+    $('form').trigger('reset');
   });
-  return false;
 });
+},
+});
+
+ 
 
 
 // 
