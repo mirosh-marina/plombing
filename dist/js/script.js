@@ -1,3 +1,24 @@
+$(document).ready(function(){
+  $('.carousel__inner').slick({
+      speed: 1200,
+      // adaptiveHeight: true,
+      prevArrow: '<button type="button" class="slick-prev"><img src="icons/solid/left_solid.png"></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="icons/solid/right_solid.png"></button>',
+      responsive: [
+          {
+              breakpoint: 992,
+              settings: {
+                  dots: true,
+                  arrows: false,
+                  marker: false
+              } 
+          }
+      ]
+  });
+  $('.single-item-rtl').slick({
+    rtl: true
+  });
+});
 const headerBtn = document.getElementById("headerBtn");
 const footerBtn = document.getElementById("footerBtn");
 const mainBtn = document.getElementById("mainBtn");
