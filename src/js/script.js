@@ -53,6 +53,10 @@ $('#questions-form').validate({
     email: {
       required: true,
       email: true
+    },
+    message: {
+      required: true,
+      minlength: 5
     }
   },
   messages: {
@@ -64,16 +68,20 @@ $('#questions-form').validate({
     email: {
       required: "Please enter your email",
       email: "Incorrect email address entered"
+    },
+    message: {
+      required: "Please enter your message",
+      minlength: "Your message must be at least 5 characters long"
     }
   },
   submitHandler: function(form) {
     if ($('#questions-form').valid()) {
       $('.overlay, #thanks').fadeIn('slow');
+      }
     }
-  }
-});
+  });
+}
 
-};
 $('.modal__close').on('click', function() {
   $('.overlay, #thanks').fadeOut('slow');
   $('#questions-form')[0].reset();
